@@ -220,3 +220,14 @@
 // const finalSettings = { ...defaultSettings, ...overrideSettings };
 
 //  ***** Example JSV2 Block 3 30
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//   // Change code below this line
+//   return { ...{ category, priority, completed }, ...data };
+//   // Change code above this line
+// }
+
+//  ***** Example JSV2 Block 3 31
