@@ -231,3 +231,15 @@
 // }
 
 //  ***** Example JSV2 Block 3 31
+
+// Change code below this line
+function add(...args) {
+  let total = 0;
+  for (const arg of args) {
+    total += arg;
+  }
+
+  // Change code above this line
+}
+
+//  ***** Example JSV2 Block 3 32
