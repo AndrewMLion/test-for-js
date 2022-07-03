@@ -260,3 +260,21 @@
 // }
 
 //  ***** Example JSV2 Block 3 33
+
+// Change code below this line
+function findMatches(array1, ...array2) {
+  const matches = []; // Don't change this line
+  console.log(array1);
+  console.log(array2);
+
+  for (let i = 0; i < array1.length; i += 1) {
+    if (array2.includes(array1[i])) matches.push(array1[i]);
+    //  console.log(newArray);
+  }
+  return matches;
+
+  // Change code above this line
+  // return matches;
+}
+
+//  ***** Example JSV2 Block 3 34
