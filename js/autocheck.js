@@ -232,14 +232,31 @@
 
 //  ***** Example JSV2 Block 3 31
 
-// Change code below this line
-function add(...args) {
-  let total = 0;
-  for (const arg of args) {
-    total += arg;
-  }
+// // Change code below this line
+// function add(...args) {
+//   let total = 0;
+//   for (const arg of args) {
+//     total += arg;
+//   }
 
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
 //  ***** Example JSV2 Block 3 32
+
+// Change code below this line
+// function add(...args) {
+//   // console.log(args);
+//   let total = 0;
+//   for (i = 0; i < args.length; i += 1) {
+//     // console.log(arg);
+//     if (args[i] > args[0]) {
+//       total += args[i];
+//     }
+//   }
+//   console.log(total);
+//   return total;
+//   // Change code above this line
+// }
+
+//  ***** Example JSV2 Block 3 33
