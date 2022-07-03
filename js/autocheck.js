@@ -203,3 +203,20 @@
 // const worstScore = Math.min(...allScores);
 
 //  ***** Example JSV2 Block 3 29
+
+// const defaultSettings = {
+//   theme: 'light',
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+//  ***** Example JSV2 Block 3 30
