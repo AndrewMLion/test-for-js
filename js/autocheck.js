@@ -278,25 +278,47 @@
 
 //  ***** Example JSV2 Block 3 34
 
-const bookShelf = {
-  books: ['The last kingdom', 'The guardian of dreams'],
-  getBooks() {
-    return 'Returning all books';
-  },
-  addBook(bookName) {
-    return `Adding book ${bookName}`;
-  },
+// const bookShelf = {
+//   books: ['The last kingdom', 'The guardian of dreams'],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
 
-  removeBook(bookName) {
-    return `Deleting book ${bookName}`;
-  },
-  updateBook(oldName, newName) {
-    return `Updating book ${oldName} to ${newName}`;
-  },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// bookShelf.addBook('Haze');
+// bookShelf.removeBook('Red sunset');
+// bookShelf.updateBook('Sands of dune', 'Dune');
+
+// console.log(bookShelf.addBook('Haze'));
+
+//  ***** Example JSV2 Block 3 35
+
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     // const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(this.books.indexOf(oldName), 1, newName);
+
+//     // Change code above this line
+//   },
+//   // let bookIndex = bookShelf.books.indexOf('Haze'),
+// };
+// console.log(bookShelf.updateBook('Haze', 'Dungeon chronicles'));
+
+//  ***** Example JSV2 Block 3 36
+
+const atTheOldToad = {
+  // Change code below this line
+  // Change code above this line
 };
-
-bookShelf.addBook('Haze');
-bookShelf.removeBook('Red sunset');
-bookShelf.updateBook('Sands of dune', 'Dune');
-
-console.log(bookShelf.addBook('Haze'));
