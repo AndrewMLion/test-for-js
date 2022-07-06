@@ -1,21 +1,22 @@
 // **** Example JSV2 Block 3 19
 
 // const products = [
-//     { name: 'Radar', price: 1300, quantity: 4 },
-//     { name: 'Scanner', price: 2700, quantity: 3 },
-//     { name: 'Droid', price: 400, quantity: 7 },
-//     { name: 'Grip', price: 1200, quantity: 9 },
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
 // ];
 
 // function getAllPropValues(propName) {
-//     const result = [];
-//     for (const product of products) {
-//         if (product.hasOwnProperty([propName])) {
-//             result.push(product[propName]);
-//         }
+//   const result = [];
+//   for (const product of products) {
+//     if (product.hasOwnProperty([propName])) {
+//       result.push(product[propName]);
 //     }
-//     return result;
+//   }
+//   return result;
 // }
+// // console.log(getAllPropValues(propName));
 
 // getAllPropValues('name');
 // getAllPropValues('quantity');
@@ -32,6 +33,8 @@
 //   { name: 'Droid', price: 400, quantity: 7 },
 //   { name: 'Grip', price: 1200, quantity: 9 },
 // ];
+
+// console.table(products);
 
 // function calculateTotalPrice(productName) {
 //   let result = 0;
@@ -52,7 +55,7 @@
 // calculateTotalPrice('Grip');
 // calculateTotalPrice('Scanner');
 
-// console.log(calculateTotalPrice(productName));
+// console.log(calculateTotalPrice('Radar'));
 
 //  ***** Example JSV2 Block 3 21
 
@@ -261,20 +264,39 @@
 
 //  ***** Example JSV2 Block 3 33
 
-// Change code below this line
-function findMatches(array1, ...array2) {
-  const matches = []; // Don't change this line
-  console.log(array1);
-  console.log(array2);
+// function findMatches(array1, ...array2) {
+//   const matches = []; // Don't change this line
+//   console.log(array1);
+//   console.log(array2);
 
-  for (let i = 0; i < array1.length; i += 1) {
-    if (array2.includes(array1[i])) matches.push(array1[i]);
-    //  console.log(newArray);
-  }
-  return matches;
-
-  // Change code above this line
-  // return matches;
-}
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) matches.push(array1[i]);
+//     //  console.log(newArray);
+//   }
+//   return matches;
+// }
 
 //  ***** Example JSV2 Block 3 34
+
+const bookShelf = {
+  books: ['The last kingdom', 'The guardian of dreams'],
+  getBooks() {
+    return 'Returning all books';
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+
+  removeBook(bookName) {
+    return `Deleting book ${bookName}`;
+  },
+  updateBook(oldName, newName) {
+    return `Updating book ${oldName} to ${newName}`;
+  },
+};
+
+bookShelf.addBook('Haze');
+bookShelf.removeBook('Red sunset');
+bookShelf.updateBook('Sands of dune', 'Dune');
+
+console.log(bookShelf.addBook('Haze'));
