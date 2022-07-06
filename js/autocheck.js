@@ -318,9 +318,53 @@
 
 //  ***** Example JSV2 Block 3 36
 
-const atTheOldToad = {
-  // Change code below this line
-  potions: [],
+// const atTheOldToad = {
 
-  // Change code above this line
-};
+//   // Change code below this line
+//   potions: [],
+
+//   // Change code above this line
+// };
+
+//  ***** Example JSV2 Block 3 37
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+
+//   // Change code above this line
+// };
+
+// console.log(atTheOldToad.getPotions());
+
+//  ***** Example JSV2 Block 3 38
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//      // Change code above this line
+//   },
+// };
+// atTheOldToad.addPotion('Invisibility');
+// console.log(atTheOldToad);
+
+//  ***** Example JSV2 Block 3 39
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   removePotion(potionName) {
+
+//     this.potions.splice(this.potions.indexOf(potionName), 1);
+
+//   },
+// };
+
+// После первого вызова метода atTheOldToad.removePotion("Dragon breath"), в свойстве potions будет массив ["Speed potion", Stone skin"]
+// После второго вызова метода atTheOldToad.removePotion("Speed potion"), в свойстве potions будет массив ["Stone skin"]
+
+//  ***** Example JSV2 Block 3 40
