@@ -394,34 +394,55 @@ const atTheOldToad = {
     { name: 'Dragon breath', price: 780 },
     { name: 'Stone skin', price: 520 },
   ],
+
   // Change code below this line
   getPotions() {
     return this.potions;
   },
   addPotion(newPotion) {
-    if (this.potions.includes(newPotion)) {
-      return `Error! Potion ${newPotion} is already in your inventory!`;
+    for (let i = 0; i < this.potions.length; i += 1) {
+      const potion = this.potions[i];
+      if (newPotion.name === potion.name) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
     }
-
     this.potions.push(newPotion);
   },
+
   removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
-
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
+    for (let i = 0; i < this.potions.length; i += 1) {
+      const potion = this.potions[i];
+      if (potionName === potion.name) {
+        this.potions.splice(i, 1);
+        return `Potion ${potionName} is not in inventory!`;
+      }
     }
-
-    this.potions.splice(potionIndex, 1);
   },
+
   updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
+    for (const potion of this.potions) {
+      console.log(potion.name);
+      if (oldName === potion.name) {
+        potion.name = newName;
+      }
     }
-
-    this.potions.splice(potionIndex, 1, newName);
+    return `Potion ${oldName} is not in inventory!`;
   },
   // Change code above this line
 };
+
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: 'Invisibility', price: 620 }));
+// atTheOldToad.addPotion({ name: 'Invisibility', price: 620 });
+// console.log(atTheOldToad.addPotion({ name: 'Power potion', price: 270 }));
+// atTheOldToad.addPotion({ name: 'Power potion', price: 270 });
+
+// atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
+
+atTheOldToad.updatePotionName('Dragon breath', 'Polymorth');
+
+console.log(atTheOldToad.potions);
+
+// atTheOldToad.removePotion('Dragon breath');
+
+console.table(atTheOldToad.potions);
